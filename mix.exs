@@ -5,10 +5,12 @@ defmodule ExMachinaPolymorphicEmbed.MixProject do
     [
       app: :ex_machina_polymorphic_embed,
       version: "0.1.0",
+      description: "Temporary fix for ex_machina and polymorphic_embed",
       elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      elixirc_paths: elixirc_paths(Mix.env())
+      elixirc_paths: elixirc_paths(Mix.env()),
+      package: package()
     ]
   end
 
@@ -31,4 +33,19 @@ defmodule ExMachinaPolymorphicEmbed.MixProject do
 
   defp elixirc_paths(:test), do: ["lib", "test/support"]
   defp elixirc_paths(_), do: ["lib"]
+
+  defp package do
+    [
+      name: "ex_machina_polymorphic_embed",
+      licenses: ["MIT"],
+      organization: "hexpm",
+      files: ["lib", "mix.exs", "README.*"],
+      links: %{
+        "Docs" => "https://hexdocs.pm/ex_machina_polymorphic_embed",
+        "GitHub" => "https://github.com/bitfreighter/ex_machina_polymorphic_embed"
+      },
+      source_url: "https://github.com/bitfreighter/ex_machina_polymorphic_embed",
+      homepage_url: "https://github.com/bitfreighter"
+    ]
+  end
 end

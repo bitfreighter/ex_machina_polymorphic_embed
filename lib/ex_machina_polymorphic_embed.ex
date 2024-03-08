@@ -1,18 +1,5 @@
 defmodule ExMachinaPolymorphicEmbed do
   @moduledoc """
-  Documentation for `ExMachinaPolymorphicEmbed`.
+  In your factory replace `use ExMachina.Ecto, YourApp.Repo` with `ExMachinaPolymorphicEmbed.Ecto, repo: YourApp.Repo`
   """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> ExMachinaPolymorphicEmbed.hello()
-      :world
-
-  """
-  def hello do
-    :world
-  end
 end
