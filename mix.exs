@@ -27,7 +27,8 @@ defmodule ExMachinaPolymorphicEmbed.MixProject do
       {:ex_machina, "~> 2.7.0", only: :test},
       {:ecto_sql, "~> 3.0"},
       {:postgrex, ">= 0.0.0"},
-      {:polymorphic_embed, "~> 3.0.5"}
+      {:polymorphic_embed, "~> 3.0.5"},
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
 
