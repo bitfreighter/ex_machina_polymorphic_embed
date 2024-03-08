@@ -4,7 +4,7 @@ defmodule ExMachinaPolymorphicEmbed.MixProject do
   def project do
     [
       app: :ex_machina_polymorphic_embed,
-      version: "0.1.0",
+      version: "0.1.1",
       description: "Temporary fix for ex_machina and polymorphic_embed",
       elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,

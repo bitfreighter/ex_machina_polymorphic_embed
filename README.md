@@ -8,7 +8,7 @@ Stolen from this pull request: https://github.com/mathieuprog/polymorphic_embed/
 ```elixir
 def deps do
   [
-    {:ex_machina_polymorphic_embed, "~> 0.1.0", only: :test}
+    {:ex_machina_polymorphic_embed, "~> 0.1.1", only: :test}
   ]
 end
 ```
