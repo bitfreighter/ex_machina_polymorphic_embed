@@ -24,7 +24,7 @@ defmodule ExMachinaPolymorphicEmbed.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ex_machina, "~> 2.7.0", only: :test},
+      {:ex_machina, "~> 2.7.0"},
       {:ecto_sql, "~> 3.0"},
       {:postgrex, ">= 0.0.0"},
       {:polymorphic_embed, "~> 3.0.5"},
